@@ -1,0 +1,86 @@
+.logo-header{
+    color: var(--main-dark-color);    
+    }
+
+.header{
+        padding: 24px 0;
+        border-bottom: 1px solid var(--border-line-color);
+        }
+        
+.header-container{
+        display: flex;
+        justify-content: space-between;
+        }
+
+.navigation{
+        display: flex;
+        align-items: center;
+        }
+.navigation-list{
+        display: flex;    
+        margin-left: 93px; 
+        }  
+
+.contact-header-list{
+        display: flex;
+        align-items: center; 
+        }
+.contact-header-list>:first-child{
+        margin-right: 20px;
+        }
+.contact-header-link{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;  
+        color: var(--main-medium-color); 
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);         
+        }
+    
+.navigation-link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-dark-color); 
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);                                   
+        }
+.navigation-link:hover, .navigation-link:focus,
+.contact-header-link:hover, .contact-header-link:focus{
+    color: var(--brand-color);
+    }
+.navigation-item:not(:last-child){
+    margin-right: 50px;
+    }
+
+nav .current-link{
+    color: var(--brand-color);
+    position: relative;
+    } 
+    
+.current-link::after{
+    content: "";
+    display: block;
+    background-color: var(--brand-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    }
+    
+.contacts-icon{
+    fill: var(--main-medium-color);
+    margin-right: 10px;
+    }   
+.contact-header-link:hover .contacts-icon, 
+.contact-header-link:focus .contacts-icon{
+    fill: var(--brand-color);
+    }
