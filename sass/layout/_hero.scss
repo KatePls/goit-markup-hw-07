@@ -8,6 +8,7 @@
     background-size: cover;
     background-color: #C4c4c4;
     }
+
 .hero-title {   
     font-weight: 900;
     font-size: 44px;
@@ -17,6 +18,7 @@
     color: var(--main-light-color);
     margin-bottom: 30px;
     }
+
 .button-hero{
     padding: 10px 32px;
     border: none;
@@ -33,7 +35,9 @@
     transition-property: bacground;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, 
+    &:focus{
+        background: var(--brand-color-hover);
+        }       
     }
-.button-hero:hover, .button-hero:focus{
-    background: var(--brand-color-hover);
-    }       
