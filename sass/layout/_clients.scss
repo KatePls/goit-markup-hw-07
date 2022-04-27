@@ -5,7 +5,13 @@
     
 .client-icon{
     fill: var(--color-svg);
+
+    .client-item-link:hover &,
+    .client-item-link:focus &{
+        fill: var(--brand-color);
+        }
     }
+
 .client-item-link{
     display: flex;
     justify-content: center;
@@ -17,11 +23,9 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.client-item-link:hover .client-icon,
-.client-item-link:focus .client-icon{
-    fill: var(--brand-color);
-    }
-.client-item-link:hover, .client-item-link:focus{
-    border: 1px solid var(--brand-color);
+    
+    &:hover, 
+    &:focus{
+       border: 1px solid var(--brand-color);
+       }
     }
