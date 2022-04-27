@@ -22,7 +22,7 @@
         margin-left: 93px; 
         }  
 
-.contact-header-list{
+.contact-header{
         display: flex;
         align-items: center; 
         
@@ -31,7 +31,7 @@
            }
         }
 
-.contact-header-link{
+.contact-header__link{
         display: flex;
         align-items: center;
         font-weight: 500;
@@ -49,7 +49,7 @@
              }
         }
     
-.navigation-link{
+.navigation-list__link{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -65,7 +65,7 @@
             }
         }
 
-.navigation-item:not(:last-child){
+.navigation-list__item:not(:last-child){
     margin-right: 50px;
     }
 
@@ -86,12 +86,12 @@ nav .current-link{
         }
     }
 
-.contacts-icon{
+.contacts-header__icon{
     fill: var(--main-medium-color);
     margin-right: 10px;   
 
-    .contact-header-link:hover &, 
-    .contact-header-link:focus &{
+    .contact-header__link:hover &, 
+    .contact-header__link:focus &{
         fill: var(--brand-color);
         }
     }

@@ -177,8 +177,8 @@ margin-bottom: 10px;
 }
 
 .btn-modal{
-    padding-left: 55px;
-    padding-right: 55px; 
+    @extend .button;
+    padding: 10px 55px;
     display: block; 
     margin: 0 auto;
 }
