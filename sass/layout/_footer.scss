@@ -1,7 +1,3 @@
-.logo-footer{
-    color: var(--main-light-color);
-    }
-    
 .footer{
     padding: 60px 0;
     background-color: var(--backgr-color);
@@ -15,7 +11,7 @@
     margin-top: 20px;
     }
 
-.contact-footer{
+.footer-adress__contact{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -24,15 +20,21 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--main-medium-color-opacity);
     
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+    }
+
     &:first-child {
         margin-bottom: 9px;
         }
     }
 
-.contact-footer-adress{
-    @extend .contact-footer;
-    @extend .logo-footer;
+.footer-adress__contact-map{
+    @extend .footer-adress__contact;
+    color: var(--main-light-color);
     margin-bottom: 9px;
 
     &:hover,
@@ -41,16 +43,7 @@
         }
     }
 
-.contact-footer{
-    color: var(--main-medium-color-opacity);
-
-    &:hover,
-    &:focus {
-        color: var(--brand-color);
-        }
-    }
-
-.contact-footer-item:not(:last-child){
+.footer-adress__contact-item:not(:last-child){
     margin-bottom: 9px;
     }
 
@@ -58,7 +51,8 @@
     margin-right: 70px;
     }
 
-.footer-social-title{
+.footer-center__social-title,
+.footer-right__social-title{
     margin-top: 12px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -69,11 +63,11 @@
     color: var(--main-light-color);
     }
     
-.footer-social-list{
+.footer-center__social-list{
     display: flex;
     }
 
-.footer-social-link{
+.footer-center__social-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,23 +86,23 @@
         }
     }
 
-.footer-social-item:not(:last-child){
+.footer-center__social-item:not(:last-child){
     margin-right: 10px;
     }
 
-.footer-social-icon {
+.footer-center__social-icon {
     fill: var(--main-light-color, #F5F4FA);
     }
 
 .footer-center{
     margin-right: 93px;
     }
-    
-.form-subscription{
+
+.footer-right__form-subscription{
     display: flex;
     }
 
-.input-subscription{
+.footer-right__input-subscription{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -124,7 +118,7 @@
     outline: none;
     }
     
-.btn-footer{
+.footer-right__btn{
     @extend .button;
     display: flex;
     align-items: center;
@@ -132,7 +126,7 @@
     padding-right: 28px;
     }
 
-.icon-send{
+.footer-right__btn-icon{
     margin-left: 10px;
     }
     

@@ -1,12 +1,13 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './utils/button';
 
 @import './base/commons';
 @import './base/container';
 
 @import './components/logo';
 @import './components/backdrop';
+@import './components/button';
+@import './components/title';
 
 @import './layout/header';
 @import './layout/hero';

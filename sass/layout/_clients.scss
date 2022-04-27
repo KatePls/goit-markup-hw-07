@@ -1,18 +1,22 @@
-.client-list{
+.clients__title{
+   @extend .section-title;
+}
+
+.clients__list{
     display: flex;
     justify-content: space-between;
     }
     
-.client-icon{
+.clients__icon{
     fill: var(--color-svg);
 
-    .client-item-link:hover &,
-    .client-item-link:focus &{
+    .clients__item-link:hover &,
+    .clients__item-link:focus &{
         fill: var(--brand-color);
         }
     }
 
-.client-item-link{
+.clients__item-link{
     display: flex;
     justify-content: center;
     align-items: center;

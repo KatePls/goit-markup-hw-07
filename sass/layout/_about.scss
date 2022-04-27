@@ -1,4 +1,4 @@
-.about-description-list{
+.about__list-description{
     display: flex;
     justify-content: space-between;
     margin-bottom: 94px;
@@ -12,7 +12,17 @@
         }
 }
 
-.our-work-image{
+.about__description-title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(---main-dark-color)
+}
+
+.about__work-image{
 width: 270px;
 height: 120px;
 padding: 25px 100px;
@@ -20,42 +30,26 @@ margin-bottom: 30px;
 background-color: var(--backgr-color-section);
 }
 
-.title-about{
-margin-bottom: 10px;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(---main-dark-color)    
-}
-
-.about-description{
+.about__description{
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--main-medium-color)
 }
 
-.section-title {
-margin-bottom: 50px;
-font-weight: bold;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-dark-color);
+.about__title{
+    @extend .section-title;
 }
 
-.description-img-list, .team-list{
+.about__img-list{
 display: flex;
 justify-content: space-between;
 }
 
-.description-img-item{
+.about__img-item{
     position: relative;
 }
-.overlay-text{
+.about__overlay-text{
     position: absolute;
     bottom: 0;
     width: 100%;
