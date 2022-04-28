@@ -373,13 +373,13 @@ nav .current-link::after {
   left: 0;
 }
 
-.contacts-header__icon {
+.contact-header__icon {
   fill: var(--main-medium-color);
   margin-right: 10px;
 }
 
-.contact-header__link:hover .contacts-header__icon,
-.contact-header__link:focus .contacts-header__icon {
+.contact-header__link:hover .contact-header__icon,
+.contact-header__link:focus .contact-header__icon {
   fill: var(--brand-color);
 }
 
